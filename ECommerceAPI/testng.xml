@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="API" verbose="2">
-  <test thread-count="5" name="Default XmlTest name 32c5c2f7-b504-4122-9945-6a8a348e3f45" verbose="2">
+  <listeners>
+    <listener class-name="com.ecommerce.commonUtils.listeners.TestStatusListener"/>
+    <listener class-name="com.ecommerce.commonUtils.listeners.TestStatusListener"/>
+  </listeners>
+  <test thread-count="5" name="Default XmlTest name e8651912-3096-4ac1-a58b-dd6dc5bd5025" verbose="2">
     <parameter name="dataSheet" value="API_DATA"/>
     <parameter name="testCaseID" value="TC0001"/>
     <classes>
@@ -11,5 +15,16 @@
         </methods>
       </class> <!-- testScripts.loginAPITest -->
     </classes>
-  </test> <!-- Default XmlTest name 32c5c2f7-b504-4122-9945-6a8a348e3f45 -->
+  </test> <!-- Default XmlTest name e8651912-3096-4ac1-a58b-dd6dc5bd5025 -->
+  <test thread-count="5" name="Default XmlTest name 2cf543c2-b817-4437-a2da-265cc2fbf267" verbose="2">
+    <parameter name="dataSheet" value="API_DATA"/>
+    <parameter name="testCaseID" value="TC0002"/>
+    <classes>
+      <class name="testScripts.CreateProduct">
+        <methods>
+          <include name="createnewProduct"/>
+        </methods>
+      </class> <!-- testScripts.CreateProduct -->
+    </classes>
+  </test> <!-- Default XmlTest name 2cf543c2-b817-4437-a2da-265cc2fbf267 -->
 </suite> <!-- API -->

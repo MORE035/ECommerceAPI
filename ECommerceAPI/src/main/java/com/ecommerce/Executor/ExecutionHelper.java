@@ -34,6 +34,8 @@ public class ExecutionHelper {
 				String TestCaseID = recordset.getField("TestCaseID");
 				suite.setName(appName);
 				suite.setVerbose(2);
+				suite.addListener("com.ecommerce.commonUtils.listeners.TestStatusListener");
+
 			    System.out.println("Sheet Name ----> "+sheetName);
 				//System.out.println("TestModule Name : "+testModule);
 				System.out.println("TestClass Name : " + testClassName);
@@ -104,6 +106,7 @@ public class ExecutionHelper {
 		xmlClass.setIncludedMethods(lstxmlInclude);
 		lstClasses.add(xmlClass);
 		test1.setClasses(lstClasses);
+		
 		return test1;
 	}
 

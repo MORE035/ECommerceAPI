@@ -15,7 +15,7 @@ public class loginAPITest extends BaseTest {
     public void loginAPI(String testCaseID, String dataSheet) throws IOException {
 		
 		postEndPointUrl(testCaseID,dataSheet);
-		ConfigReader.setProperties("token",extractString("tokean"));
+		ConfigReader.setProperties("token",extractString("token"));
 		ConfigReader.setProperties("userId",extractString("userId"));
 		
 		
