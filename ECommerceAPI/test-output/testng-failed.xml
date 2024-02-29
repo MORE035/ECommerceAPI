@@ -3,9 +3,9 @@
 <suite name="Failed suite [API]" guice-stage="DEVELOPMENT" verbose="2">
   <listeners>
     <listener class-name="com.ecommerce.commonUtils.listeners.TestStatusListener"/>
-    <listener class-name="com.ecommerce.commonUtils.listeners.TestStatusListener"/>
+    <listener class-name="com.ecommerce.commonUtils.listeners.Log4jTestNGListener"/>
   </listeners>
-  <test thread-count="5" name="Default XmlTest name 2cf543c2-b817-4437-a2da-265cc2fbf267(failed)" verbose="2">
+  <test thread-count="5" name="Default XmlTest name 8c3c54b5-ef52-4e63-912c-b69645819c50(failed)" verbose="2">
     <parameter name="dataSheet" value="API_DATA"/>
     <parameter name="testCaseID" value="TC0002"/>
     <classes>
@@ -15,5 +15,5 @@
         </methods>
       </class> <!-- testScripts.CreateProduct -->
     </classes>
-  </test> <!-- Default XmlTest name 2cf543c2-b817-4437-a2da-265cc2fbf267(failed) -->
+  </test> <!-- Default XmlTest name 8c3c54b5-ef52-4e63-912c-b69645819c50(failed) -->
 </suite> <!-- Failed suite [API] -->

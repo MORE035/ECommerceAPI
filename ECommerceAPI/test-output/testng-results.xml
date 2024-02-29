@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-29T16:02:07 IST" name="API" finished-at="2024-02-29T16:02:13 IST" duration-ms="5533">
+  <suite started-at="2024-02-29T16:46:46 IST" name="API" finished-at="2024-02-29T16:46:51 IST" duration-ms="4227">
     <groups>
     </groups>
-    <test started-at="2024-02-29T16:02:07 IST" name="Default XmlTest name e8651912-3096-4ac1-a58b-dd6dc5bd5025" finished-at="2024-02-29T16:02:11 IST" duration-ms="3869">
+    <test started-at="2024-02-29T16:46:46 IST" name="Default XmlTest name 50b87300-750b-4859-865b-6ecd46bef83b" finished-at="2024-02-29T16:46:51 IST" duration-ms="4090">
       <class name="testScripts.loginAPITest">
-        <test-method signature="loginAPI(java.lang.String,java.lang.String)[pri:0, instance:testScripts.loginAPITest@77fbd92c]" started-at="2024-02-29T16:02:07 IST" name="loginAPI" finished-at="2024-02-29T16:02:11 IST" duration-ms="3826" status="PASS">
+        <test-method signature="loginAPI(java.lang.String,java.lang.String)[pri:0, instance:testScripts.loginAPITest@37c7595]" started-at="2024-02-29T16:46:46 IST" name="loginAPI" finished-at="2024-02-29T16:46:50 IST" duration-ms="4028" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,10 +24,10 @@
           </reporter-output>
         </test-method> <!-- loginAPI -->
       </class> <!-- testScripts.loginAPITest -->
-    </test> <!-- Default XmlTest name e8651912-3096-4ac1-a58b-dd6dc5bd5025 -->
-    <test started-at="2024-02-29T16:02:11 IST" name="Default XmlTest name 2cf543c2-b817-4437-a2da-265cc2fbf267" finished-at="2024-02-29T16:02:13 IST" duration-ms="1633">
+    </test> <!-- Default XmlTest name 50b87300-750b-4859-865b-6ecd46bef83b -->
+    <test started-at="2024-02-29T16:46:51 IST" name="Default XmlTest name 8c3c54b5-ef52-4e63-912c-b69645819c50" finished-at="2024-02-29T16:46:51 IST" duration-ms="107">
       <class name="testScripts.CreateProduct">
-        <test-method signature="createnewProduct(java.lang.String,java.lang.String)[pri:0, instance:testScripts.CreateProduct@5bf0d49]" started-at="2024-02-29T16:02:11 IST" name="createnewProduct" finished-at="2024-02-29T16:02:13 IST" duration-ms="1628" status="FAIL">
+        <test-method signature="createnewProduct(java.lang.String,java.lang.String)[pri:0, instance:testScripts.CreateProduct@189aa67a]" started-at="2024-02-29T16:46:51 IST" name="createnewProduct" finished-at="2024-02-29T16:46:51 IST" duration-ms="99" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -40,40 +40,24 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="java.nio.file.NoSuchFileException">
             <message>
-              <![CDATA[1 expectation failed.
-Expected status code <201> but was <401>.
-]]>
+              <![CDATA[C:\Users\SPUGE\git\ECommerceAPI\ECommerceAPI\src\main\resources\jsonData\CreateProduct.json]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <201> but was <401>.
-
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at com.ecommerce.Driver.API.customKeywords.APIDriverKeywords.assertIt(APIDriverKeywords.java:223)
-at testScripts.CreateProduct.createnewProduct(CreateProduct.java:19)
+              <![CDATA[java.nio.file.NoSuchFileException: C:\Users\SPUGE\git\ECommerceAPI\ECommerceAPI\src\main\resources\jsonData\CreateProduct.json
+at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+at java.base/java.nio.file.Files.readAllBytes(Files.java:3268)
+at java.base/java.nio.file.Files.readString(Files.java:3346)
+at java.base/java.nio.file.Files.readString(Files.java:3305)
+at com.ecommerce.Driver.API.customKeywords.APIDriverKeywords.getStringFromFilePath(APIDriverKeywords.java:111)
+at com.ecommerce.Driver.API.customKeywords.APIDriverKeywords.postEndPointUrl(APIDriverKeywords.java:57)
+at testScripts.CreateProduct.createnewProduct(CreateProduct.java:17)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
@@ -102,11 +86,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.nio.file.NoSuchFileException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createnewProduct -->
       </class> <!-- testScripts.CreateProduct -->
-    </test> <!-- Default XmlTest name 2cf543c2-b817-4437-a2da-265cc2fbf267 -->
+    </test> <!-- Default XmlTest name 8c3c54b5-ef52-4e63-912c-b69645819c50 -->
   </suite> <!-- API -->
 </testng-results>

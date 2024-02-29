@@ -3,9 +3,9 @@
 <suite name="API" verbose="2">
   <listeners>
     <listener class-name="com.ecommerce.commonUtils.listeners.TestStatusListener"/>
-    <listener class-name="com.ecommerce.commonUtils.listeners.TestStatusListener"/>
+    <listener class-name="com.ecommerce.commonUtils.listeners.Log4jTestNGListener"/>
   </listeners>
-  <test thread-count="5" name="Default XmlTest name e8651912-3096-4ac1-a58b-dd6dc5bd5025" verbose="2">
+  <test thread-count="5" name="Default XmlTest name 50b87300-750b-4859-865b-6ecd46bef83b" verbose="2">
     <parameter name="dataSheet" value="API_DATA"/>
     <parameter name="testCaseID" value="TC0001"/>
     <classes>
@@ -15,8 +15,8 @@
         </methods>
       </class> <!-- testScripts.loginAPITest -->
     </classes>
-  </test> <!-- Default XmlTest name e8651912-3096-4ac1-a58b-dd6dc5bd5025 -->
-  <test thread-count="5" name="Default XmlTest name 2cf543c2-b817-4437-a2da-265cc2fbf267" verbose="2">
+  </test> <!-- Default XmlTest name 50b87300-750b-4859-865b-6ecd46bef83b -->
+  <test thread-count="5" name="Default XmlTest name 8c3c54b5-ef52-4e63-912c-b69645819c50" verbose="2">
     <parameter name="dataSheet" value="API_DATA"/>
     <parameter name="testCaseID" value="TC0002"/>
     <classes>
@@ -26,5 +26,5 @@
         </methods>
       </class> <!-- testScripts.CreateProduct -->
     </classes>
-  </test> <!-- Default XmlTest name 2cf543c2-b817-4437-a2da-265cc2fbf267 -->
+  </test> <!-- Default XmlTest name 8c3c54b5-ef52-4e63-912c-b69645819c50 -->
 </suite> <!-- API -->

@@ -1,6 +1,6 @@
 package com.ecommerce.commonUtils;
 
-import org.apache.log4j.Logger;
+
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -11,8 +11,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
+import org.apache.logging.log4j.core.Logger;
+
+
 public class ConfigReader {
-    Logger logger = LoggerHelper.getLogger(ConfigReader.class);
+   // Logger loggerlogger = LoggerHelper.getLogger(ConfigReader.class);
     static String  path=System.getProperty("user.dir") +"\\src\\test\\resources\\config\\config.properties";
 
 

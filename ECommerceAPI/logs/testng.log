@@ -1,0 +1,8 @@
+16:46:46.919 [main] INFO  com.ecommerce.commonUtils.listeners.Log4jTestNGListener - Test suite started: Default XmlTest name 50b87300-750b-4859-865b-6ecd46bef83b
+16:46:46.966 [main] INFO  com.ecommerce.commonUtils.listeners.Log4jTestNGListener - Test started: loginAPI
+16:46:50.984 [main] INFO  com.ecommerce.commonUtils.listeners.Log4jTestNGListener - Test passed: loginAPI
+16:46:51.002 [main] INFO  com.ecommerce.commonUtils.listeners.Log4jTestNGListener - Test suite finished: Default XmlTest name 50b87300-750b-4859-865b-6ecd46bef83b
+16:46:51.033 [main] INFO  com.ecommerce.commonUtils.listeners.Log4jTestNGListener - Test suite started: Default XmlTest name 8c3c54b5-ef52-4e63-912c-b69645819c50
+16:46:51.036 [main] INFO  com.ecommerce.commonUtils.listeners.Log4jTestNGListener - Test started: createnewProduct
+16:46:51.133 [main] ERROR com.ecommerce.commonUtils.listeners.Log4jTestNGListener - Test failed: createnewProduct
+16:46:51.139 [main] INFO  com.ecommerce.commonUtils.listeners.Log4jTestNGListener - Test suite finished: Default XmlTest name 8c3c54b5-ef52-4e63-912c-b69645819c50

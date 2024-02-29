@@ -25,6 +25,8 @@ public class ExecutionHelper {
 		XmlTest xmlTest = new XmlTest();
 		try {
 			System.out.println("----- *********** -----");
+			suite.addListener("com.ecommerce.commonUtils.listeners.TestStatusListener");
+			suite.addListener("com.ecommerce.commonUtils.listeners.Log4jTestNGListener");
 			while (recordset.next()) {
 				String includedMethods = "";
 				includedMethods = recordset.getField("TestMethod");
@@ -34,8 +36,6 @@ public class ExecutionHelper {
 				String TestCaseID = recordset.getField("TestCaseID");
 				suite.setName(appName);
 				suite.setVerbose(2);
-				suite.addListener("com.ecommerce.commonUtils.listeners.TestStatusListener");
-
 			    System.out.println("Sheet Name ----> "+sheetName);
 				//System.out.println("TestModule Name : "+testModule);
 				System.out.println("TestClass Name : " + testClassName);
